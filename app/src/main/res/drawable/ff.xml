@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/roof"
+                android:layout_width="300dp"
+                android:layout_height="154dp"
+                android:layout_gravity="center"
+                android:background="@drawable/roof"></RelativeLayout>
+            <include
+                android:id="@+id/fifth_stage"
+                layout="@layout/stage"
+                android:layout_width="240dp"
+                android:layout_height="134dp"
+                android:layout_gravity="center"/>
+            <include
+                android:id="@+id/fourth_stage"
+                layout="@layout/stage"
+                android:layout_width="240dp"
+                android:layout_height="134dp"
+                android:layout_gravity="center"/>
+            <include
+                android:id="@+id/third_stage"
+                layout="@layout/stage"
+                android:layout_width="240dp"
+                android:layout_height="134dp"
+                android:layout_gravity="center"/>
+
+            <include
+                android:id="@+id/second_stage"
+                layout="@layout/stage"
+                android:layout_width="240dp"
+                android:layout_height="134dp"
+                android:layout_gravity="center"/>
+
+            <RelativeLayout
+                android:id="@+id/first_stage"
+                android:layout_width="240dp"
+                android:layout_height="134dp"
+                android:background="@drawable/body"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/door"
+                    android:layout_width="74dp"
+                    android:layout_height="116dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/door" />
+
+                <ImageView
+                    android:id="@+id/left_window"
+                    android:layout_width="48dp"
+                    android:layout_height="58dp"
+                    android:layout_margin="16dp"
+                    android:layout_toLeftOf="@+id/door"
+                    android:src="@drawable/window" />
+
+                <ImageView
+                    android:id="@+id/right"
+                    android:layout_width="48dp"
+                    android:layout_height="58dp"
+                    android:layout_margin="16dp"
+                    android:layout_toRightOf="@id/door"
+                    android:src="@drawable/window" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</selector>
